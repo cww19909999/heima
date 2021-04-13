@@ -8,17 +8,152 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>黑马面面</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
 </head>
 
 <body>
     <!-- 头部 -->
-    <header class="header">
-        <h5>黑马面面</h5>
-    </header>
+    <header class="header">黑马面面</header>
+    <!-- 导航栏 -->
+    <section class="nav_wrapper">
+        <nav class="nav">
+            <a href="#" class="nav_item">
+                <img class="nav_icon" src="icons/icon1.png" alt="">
+                <span class="nav_text">HR面试</span>
+            </a>
+            <a href="#" class="nav_item">
+                <img class="nav_icon" src="icons/icon2.png" alt="">
+                <span class="nav_text">笔试</span>
+            </a>
+            <a href="#" class="nav_item">
+                <img class="nav_icon" src="icons/icon3.png" alt="">
+                <span class="nav_text">技术面试</span>
+            </a>
+            <a href="#" class="nav_item">
+                <img class="nav_icon" src="icons/icon4.png" alt="">
+                <span class="nav_text">模拟面试</span>
+            </a>
+            <a href="#" class="nav_item">
+                <img class="nav_icon" src="icons/icon5.png" alt="">
+                <span class="nav_text">面试技巧</span>
+            </a>
+            <a href="#" class="nav_item">
+                <img class="nav_icon" src="icons/icon6.png" alt="">
+                <span class="nav_text">薪资查询</span>
+            </a>
+        </nav>
+        <div class="focus">
+            <ul class="fwrapper">
+                <li class="fitem">
+                    <img src="images/go.png" alt="">
+                </li>
+                <li class="fitem">
+                    <img src="images/go.png" alt="">
+                </li>
+                <li class="fitem">
+                    <img src="images/go.png" alt="">
+                </li>
+            </ul>
+            <ul class="pagenation">
+                <li class="indecator active"></li>
+                <li class="indecator"></li>
+                <li class="indecator"></li>
+            </ul>
+        </div>
+    </section>
+    <!-- 就业指导 -->
+    <section class="content">
+        <div class="hd">
+            <div class="tit">
+                <span class="hd_icon"></span>
+                <h4 class="hd_text">就业指导</h4>
+            </div>
+            <a href="#" class="more">更多&gt;&gt;</a>
+        </div>
+        <div class="bd">
+            <!-- Swiper -->
+            <div class="swiper-container getjob">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic.png" alt="">
+                        </a>
+                        <p>老师叫你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/ldh.jpg" alt="">
+                        </a>
+                        <p>老师叫你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic.png" alt="">
+                        </a>
+                        <p>老师叫你应对面试技巧</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+    </section>
+    <!-- 充电学习 -->
+    <section class="content study">
+        <div class="hd">
+            <div class="tit">
+                <span class="hd_icon"></span>
+                <h4 class="hd_text">充电学习</h4>
+            </div>
+            <a href="#" class="more">更多&gt;&gt;</a>
+        </div>
+        <div class="bd">
+            <!-- Swiper -->
+            <div class="swiper-container getstudy">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/pic1.png" alt="">
+                        <h5>说地道英语，告别中式英语</h5>
+                        <p><span>156</span>人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic2.png" alt="">
+                        <h5>说地道英语告别中式英语</h5>
+                        <p><span>156</span>人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic1.png" alt="">
+                        <h5>说地道英语告别中式英语</h5>
+                        <p><span>156</span>人学习</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        (function() {
+            var swiper = new Swiper('.getjob', {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+
+        (function() {
+            var swiper = new Swiper('.getstudy', {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+            });
+        })()
+    </script>
 </body>
 
 </html>
