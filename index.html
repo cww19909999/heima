@@ -101,6 +101,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+        </div>
     </section>
     <!-- 充电学习 -->
     <section class="content study">
@@ -132,8 +133,28 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+    <footer class="footer">
+        <a class="footer_item" href="#">
+            <img src="icons/home.png" alt="">
+            <span>首页</span>
+        </a>
+        <a class="footer_item" href="#">
+            <img src="icons/net.png" alt="">
+            <span>技术面试</span>
+        </a>
+        <a class="footer_item" href="#">
+            <img src="icons/ms.png" alt="">
+            <span>模拟面试</span>
+        </a>
+        <a class="footer_item" href="#">
+            <img src="icons/user.png" alt="">
+            <span>我的主页</span>
+        </a>
+    </footer>
     <script>
+        // 实例化就业指导模块
         (function() {
             var swiper = new Swiper('.getjob', {
                 slidesPerView: 2,
@@ -146,10 +167,10 @@
                 },
             });
         })();
-
+        // 实例化充电学习模块
         (function() {
             var swiper = new Swiper('.getstudy', {
-                slidesPerView: 2.2,
+                slidesPerView: 2.5,
                 spaceBetween: 20,
             });
         })()
